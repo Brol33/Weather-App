@@ -10,7 +10,7 @@ function search() {
         .then(data => {
             console.log(data)
             const temp = data.main.temp
-            document.getElementById("weatherInfo").innerText = temp + " degrees celcius"
+            document.getElementById("weatherInfo").innerText = temp + "°C"
         })
     
 };

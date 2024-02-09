@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="search">
-        <input type="text" id="cityInput" placeholder="Enter city name">
-        <button type="button" id="search-button" onclick="search()">Search</button>
+    <div class="box">
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button type="button" id="search-button" onclick="search()">Search</button>
+        </div>
+        <div id="weatherInfo">
+        </div>
     </div>
-    <div id="weatherInfo">
-    </div>
+    
     
 </body>
 </html>
