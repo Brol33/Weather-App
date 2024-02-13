@@ -1,9 +1,13 @@
+body {
+    background-color: #202124;
+}
 .container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .box {
     width: 50%;
     height: 50%;
@@ -15,8 +19,15 @@
     align-items: center;
     flex-direction: column;
 }
+
+#mainInfo {
+    display: flex;
+    align-items: center;
+}
+
 .search{
 }
+
 #weatherInfo {
     background-color: aliceblue;
     width: 50%;

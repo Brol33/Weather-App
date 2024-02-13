@@ -12,11 +12,12 @@ function search() {
             const temp = data.main.temp
             const humidity = data.main.humidity
             const wind = data.wind.speed
-            const description = data.weather[0].main
+            const {main, icon} = data.weather[0]
             document.getElementById("temp").innerText = temp + "°C"
-            document.getElementById("humidity").innerText = "Humidity" + humidity + "%"
-            document.getElementById("wind").innerText = "Wind speed" + wind + "km/h"
-            document.getElementById("description").innerText = description
+            document.getElementById("humidity").innerText = "Humidity " + humidity + "%"
+            document.getElementById("wind").innerText = "Wind speed " + wind + "km/h"
+            document.getElementById("description").innerText = main
+            document.getElementById("icon").src = "https://openweathermap.org/img/wn/" + icon + ".png"
         })
     
 };
