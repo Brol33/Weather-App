@@ -18,6 +18,7 @@ function search() {
             document.getElementById("wind").innerText = "Wind speed " + wind + "km/h"
             document.getElementById("description").innerText = main
             document.getElementById("icon").src = "https://openweathermap.org/img/wn/" + icon + ".png"
+            document.getElementById("weather").innerText = "Weather"
         })
     
 };
